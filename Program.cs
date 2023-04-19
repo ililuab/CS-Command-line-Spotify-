@@ -1,12 +1,10 @@
 ﻿namespace CSEindopdracht__Command_line_Spotify_
 {
-
     internal class Program
     {
         static void Main(string[] args)
         {
             List<Playlist> playlists = new List<Playlist>();
-
             while (true)
             {
                 Console.WriteLine("Wat wil je doen?");
@@ -42,7 +40,7 @@
                         Console.WriteLine(" ");
                         break;
                     case 6:
-                        Console.WriteLine("Doei, neef!");
+                        Console.WriteLine("Doei!");
                         return;
                     default:
                         Console.WriteLine("Nee mag niet man.");
@@ -50,7 +48,6 @@
                 }
             }
         }
-
         static void ToonAfspeellijsten(List<Playlist> playlists)
         {
             if (playlists.Count == 0)
@@ -180,7 +177,6 @@
             Console.WriteLine("10. Billie Jean - Michael Jackson");
         }
     }
-
     class Playlist
     {
         public string Name { get; set; }
